@@ -187,7 +187,7 @@ const Hero = () => {
               className="relative p-4"
             >
               <img 
-                src="courier.png" 
+                src="/courier.png" 
                 alt="Go.Printy Courier"
                 className="w-full h-auto object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)]"
               />
@@ -329,12 +329,12 @@ const OrderFlow = () => {
 
 const Portfolio = () => {
   const images = [
-    "flyer.png",
-    "brosur.png",
-    "banner.png",
-    "stiker.jpg",
-    "kartu_nama.jpg",
-    "undangan.jpg",
+    "/flyer.png",
+    "/brosur.png",
+    "/banner.png",
+    "/stiker.jpg",
+    "/kartu_nama.jpg",
+    "/undangan.jpg",
   ];
   
 const portfolioTitles = [
