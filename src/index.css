@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Hanken Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-primary: #ffc107;
+  --color-secondary: #fe6b00;
+  --color-accent: #00defd;
+  
+  --color-background: #fff8f2;
+  --color-surface: #ffffff;
+  --color-on-surface: #201b11;
+  --color-on-surface-variant: #4f4632;
+  
+  --color-outline: #827660;
+  --color-outline-variant: #d4c5ab;
+
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 3rem;
+
+  --spacing-section: 120px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-on-surface font-sans selection:bg-primary/30;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .gradient-blur {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,193,7,0.15) 0%, rgba(255,255,255,0) 70%);
+    z-index: -1;
+    filter: blur(80px);
+    pointer-events: none;
+  }
+
+  .fade-bottom {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(255, 193, 7, 0.3);
+  }
+
+  .button-glow {
+    box-shadow: 0 0 20px rgba(254, 107, 0, 0.2);
+  }
+}
+
