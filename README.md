@@ -1,4 +1,4 @@
-# 🖨️ Go.Printy — Modern Digital Printing Landing Page
+# 🖨️ Go.Printy — Digital Printing Landing Page
 
 <p align="center">
   <img src="public/logo.png" alt="Go.Printy Logo" width="160"/>
